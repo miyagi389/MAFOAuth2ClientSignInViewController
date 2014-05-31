@@ -6,7 +6,7 @@
 
 MAFOAuth2ClientSignInViewController implements the login user interface of [AFOAuth2Client](https://github.com/AFNetworking/AFOAuth2Client).
 
-![](https://github.com/miyagi389/MAFOAuth2ClientSignInViewController/blob/master/Images/screenshot_001.png)
+![](https://raw.githubusercontent.com/miyagi389/MAFOAuth2ClientSignInViewController/master/Images/screenshot_001.png)
 
 ## Requirements
 
