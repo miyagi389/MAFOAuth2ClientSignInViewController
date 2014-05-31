@@ -1,0 +1,21 @@
+platform :ios,'7.0'
+
+target "Demo" do
+    pod "AFOAuth2Client", :git => "https://github.com/mlwelles/AFOAuth2Client.git"
+    pod "AFNetworkActivityLogger", "2.0.2"
+    pod "MAFOAuth2ClientSignInViewController", :path => "../"
+
+    post_install do |installer_representation|
+        installer_representation.project.targets.each do |target|
+            if target.product_name == 'Pods-Demo-AFOAuth2Client'
+                target.build_configurations.each do |config|
+                    # Suppression: AFOAuth2Client/AFOAuth2Client.m:175:67: 'requestWithMethod:URLString:parameters:' is deprecated
+                    config.build_settings['WARNING_CFLAGS'] = '-Wno-deprecated-declarations'
+                end
+            end
+        end
+    end
+end
+
+target "DemoTests" do
+end

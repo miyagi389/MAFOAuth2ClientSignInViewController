@@ -1,0 +1,9 @@
+# CocoaPods
+Pods/
+
+# XCode per-user config
+xcuserdata/
+
+# Application
+Demo.xcworkspace/
+

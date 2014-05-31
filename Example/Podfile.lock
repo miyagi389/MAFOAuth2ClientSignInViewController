@@ -1,0 +1,44 @@
+PODS:
+  - AFNetworkActivityLogger (2.0.2):
+    - AFNetworking/NSURLSession (~> 2.0)
+  - AFNetworking (2.2.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+    - AFNetworking/UIKit
+  - AFNetworking/NSURLConnection (2.2.4):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.2.4):
+    - AFNetworking/NSURLConnection
+  - AFNetworking/Reachability (2.2.4)
+  - AFNetworking/Security (2.2.4)
+  - AFNetworking/Serialization (2.2.4)
+  - AFNetworking/UIKit (2.2.4):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - AFOAuth2Client (0.1.1):
+    - AFNetworking (~> 2.0)
+  - MAFOAuth2ClientSignInViewController (0.1.0)
+
+DEPENDENCIES:
+  - AFNetworkActivityLogger (= 2.0.2)
+  - AFOAuth2Client (from `https://github.com/mlwelles/AFOAuth2Client.git`)
+  - MAFOAuth2ClientSignInViewController (from `../`)
+
+EXTERNAL SOURCES:
+  AFOAuth2Client:
+    :git: https://github.com/mlwelles/AFOAuth2Client.git
+  MAFOAuth2ClientSignInViewController:
+    :path: ../
+
+SPEC CHECKSUMS:
+  AFNetworkActivityLogger: 45ca411593444cbdc401b12924b4c17082ad512a
+  AFNetworking: ab63e259fe91eef4519b371ef0a4955af0e73e64
+  AFOAuth2Client: 05536bd4175add72e7efcb6b749d4e9685ed02f7
+  MAFOAuth2ClientSignInViewController: 09dafc05300ccffcf1475c5076ca35b01c6fb610
+
+COCOAPODS: 0.33.1
