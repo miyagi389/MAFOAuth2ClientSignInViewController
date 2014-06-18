@@ -64,11 +64,13 @@
 {
     [super loadView];
 
-	UIWebView *webView = [[UIWebView alloc]initWithFrame:self.view.bounds];
-    webView.delegate = self;
-    webView.scalesPageToFit = YES;
+    if (!_webView) {
+        _webView = [[UIWebView alloc]initWithFrame:self.view.bounds];
 
-	self.view = webView;
+        self.view = _webView;
+    }
+    _webView.delegate = self;
+    _webView.scalesPageToFit = YES;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -79,7 +81,8 @@
 
     NSString *url = [self buildAuthenticateURLString];
 
-    UIWebView *webView = (UIWebView *)self.view;
+    UIWebView *webView = _webView;
+
     [webView loadRequest:[NSURLRequest requestWithURL:[NSURL URLWithString:url]]];
 }
 

@@ -10,6 +10,8 @@
 
 @property (weak) id<MAFOAuth2ClientSignInViewControllerDelegate> delegate;
 
+@property (nonatomic) UIWebView *webView;
+
 @property (nonatomic) NSURL *baseURL;
 
 @property (nonatomic) NSString *clientID;

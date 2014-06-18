@@ -1,5 +1,7 @@
 # CHANGELOG
 
-## 0.1.0 (2014-06-01)
+## 0.2.0 (2014-06-18)
+* attach UIWebView
 
-Initial release.
+## 0.1.0 (2014-06-01)
+* Initial release.
